@@ -75,7 +75,7 @@ testscript <- exa.createScript(
 testscript("groupid", "val", table = "test.twogroups" , groupBy = "groupid")
 }
 ```
-To validate, here is the result of ```testscript()``` UDF:
+Here is a possible output of ```testscript()``` UDF:
 ```
 GROUPID       MEAN
 1       1  0.4798063
