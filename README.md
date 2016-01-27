@@ -31,11 +31,11 @@ docker run -d \
 You can visit http://hostip:8787 to access RStudio.
 
 ## Connect to EXASOL database from RStudio
-1. Login to RStudio on http://<host>:8787
+1. Login to RStudio on http://hostip:8787
 2. Load RODBC package```require(RODBC)```
 3. Load r-exasol package```require(exasol)```
 4. Establish ODBC connection
-5. Check [r-exasol](https://github.com/EXASOL/r-exasol) repo for examples on read, write operations.
+5. Check [EXASOL/r-exasol](https://github.com/EXASOL/r-exasol) repo for examples on read, write operations.
 
 ```{r}
 ## Using example from EXASOL/r-exasol repo /examples/createScript.R
@@ -83,4 +83,4 @@ GROUPID       MEAN
 ```
 
 ## Credits
-The Dockerfiles for ```r-base``` and ```r-studio``` are from [rocker-org/rocker](https://github.com/rocker-org/rocker) and [rocker-org/hadleyvrse](https://github.com/rocker-org/hadleyverse). Thank you guys for your awesome work. Also thanks to [r-exasol](https://github.com/EXASOL/r-exasol) for their work on providing a R interface for the EXASOL database.
+The Dockerfiles for ```r-base``` and ```r-studio``` are from [rocker-org/rocker](https://github.com/rocker-org/rocker) and [rocker-org/hadleyvrse](https://github.com/rocker-org/hadleyverse). Thank you guys for your awesome work. Also thanks to [EXASOL/r-exasol](https://github.com/EXASOL/r-exasol) for their work on providing a R interface for the EXASOL database.
