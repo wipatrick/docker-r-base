@@ -37,7 +37,7 @@ You can visit http://<host>:8787 to access RStudio.
 4. Establish ODBC connection
 5. Check [r-exasol](https://github.com/EXASOL/r-exasol) repo for examples on read, write operations.
 
-```(r)
+```{r}
 ## Using example from EXASOL/r-exasol repo /examples/createScript.R
 require(RODBC)
 require(exasol)
@@ -80,7 +80,7 @@ To validate, here is the result of ```testscript()``` UDF:
 GROUPID       MEAN
 1       1  0.4798063
 2       2 50.1477790
-``
+```
 
 ## Credits
 The Dockerfiles for ```r-base``` and ```r-studio``` are from [rocker-org/rocker](https://github.com/rocker-org/rocker) and [rocker-org/hadleyvrse](https://github.com/rocker-org/hadleyverse). Thank you guys for your awesome work.
