@@ -8,14 +8,14 @@ docker build -t r-studio:ubuntu-14.04 r-studio/
 ```
 
 ## Start RStudio container
-1. Default (R-User: rstudio, R-Password: rstudio):
+***Default*** (R-User: rstudio, R-Password: rstudio):
 ```
 docker run -d \
     -p 8787:8787 \
     --name=rstudio \
     r-studio:ubuntu-14.04
 ```
-2. Customized by passing environment variables:
+***Customized*** by passing environment variables:
 ```
 docker run -d \
     -p 8787:8787 \
@@ -28,7 +28,7 @@ docker run -d \
     --name=rstudio \
     r-studio:ubuntu-14.04
 ```
-You can visit http://<host>:8787 to access RStudio.
+You can visit http://hostip:8787 to access RStudio.
 
 ## Connect to EXASolution from RStudio
 1. Login to RStudio on http://<host>:8787
