@@ -1,5 +1,5 @@
 ## docker-r-studio-exasol
-Dockerized  Ubuntu base image (r-base) for RStudio (r-studio). The RStudio image contains all necessary packages including [r-exasol](https://github.com/EXASOL/r-exasol) to connect to EXASolution Database.
+Dockerized  Ubuntu base image (r-base) for RStudio (r-studio). The RStudio image contains all necessary packages including [r-exasol](https://github.com/EXASOL/r-exasol) to connect to EXASOL Database.
 
 ## Build images
 ```
@@ -30,7 +30,7 @@ docker run -d \
 ```
 You can visit http://hostip:8787 to access RStudio.
 
-## Connect to EXASolution from RStudio
+## Connect to EXASOL database from RStudio
 1. Login to RStudio on http://<host>:8787
 2. Load RODBC package```require(RODBC)```
 3. Load r-exasol package```require(exasol)```
@@ -83,4 +83,4 @@ GROUPID       MEAN
 ```
 
 ## Credits
-The Dockerfiles for ```r-base``` and ```r-studio``` are from [rocker-org/rocker](https://github.com/rocker-org/rocker) and [rocker-org/hadleyvrse](https://github.com/rocker-org/hadleyverse). Thank you guys for your awesome work.
+The Dockerfiles for ```r-base``` and ```r-studio``` are from [rocker-org/rocker](https://github.com/rocker-org/rocker) and [rocker-org/hadleyvrse](https://github.com/rocker-org/hadleyverse). Thank you guys for your awesome work. Also thanks to [r-exasol](https://github.com/EXASOL/r-exasol) for their work on providing a R interface for the EXASOL database.
