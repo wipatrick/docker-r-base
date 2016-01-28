@@ -62,6 +62,7 @@ RUN apt-get update \
     libxml2-dev \
     libxslt1-dev \
     libxt-dev \
+    libssh2-1-dev \
     netcdf-bin \
     qpdf \
     r-cran-rgl \
